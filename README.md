@@ -2,10 +2,13 @@
 
 Centralized Docker services setup with unified secrets management for DietPi on Raspberry Pi.
 
+<img src="./dashboard.png" alt="Dashboard"/>
+
+
 ## 📁 Service Structure
 
 ```
-docker/
+homelab-dietpi/
 ├── .env
 ├── .env.example
 ├── .gitignore
@@ -79,3 +82,9 @@ docker/
 -   **Port:** 8081
 -   **URL:** http://192.168.88.250:8081
 -   **Network:** raspberry-net
+
+## 🚀 Coming Soon
+
+-   **NAS (Network Attached Storage)** - File storage and sharing solution (Immich)
+-   **Servarr Stack** - Media automation suite (Sonarr, Radarr, Prowlarr, etc.)
+-   And more...

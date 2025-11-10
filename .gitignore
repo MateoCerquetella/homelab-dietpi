@@ -53,4 +53,7 @@ pihole/hosts/
 # Generic secrets/config dumps
 *.env.local
 *.secret
-secrets/
+secrets/.DS_Store
+**/.DS_Store
+.DS_Store
+**/.DS_Store
