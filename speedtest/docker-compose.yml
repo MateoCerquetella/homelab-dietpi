@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
     speedtest-tracker:
         container_name: speedtest-tracker
@@ -16,14 +15,13 @@ services:
             SPEEDTEST_SERVERS: '${SPEEDTEST_SERVERS}'
             PRUNE_RESULTS_OLDER_THAN: '${SPEEDTEST_PRUNE_RESULTS_OLDER_THAN}'
             DISPLAY_TIMEZONE: '${TZ}'
-            APP_URL: '${SPEEDTEST_APP_URL}'
+            APP_URL: '${SPEEDTEST_APP_KEY}'
         volumes:
             - ./speedtest-tracker/config:/config
             - ./speedtest-tracker/web:/etc/ssl/web
         restart: unless-stopped
         networks:
             - raspberry-net
-
 networks:
     raspberry-net:
         external: true

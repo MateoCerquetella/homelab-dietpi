@@ -1,27 +1,27 @@
-version: '3.8'
+version: "3.8"
 
 services:
-    portainer:
-        image: portainer/portainer-ce:latest
-        container_name: portainer
-        restart: unless-stopped
-        security_opt:
-            - no-new-privileges:true
-        ports:
-            - 9000:9000
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
-            - portainer_data:/data
-        networks:
-            - raspberry-net
-        deploy:
-            replicas: 1
-            restart_policy:
-                condition: on-failure
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    networks:
+      - raspberry-net
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
 
 volumes:
-    portainer_data:
+  portainer_data:
 
 networks:
-    raspberry-net:
-        external: true
+  raspberry-net:
+    external: true

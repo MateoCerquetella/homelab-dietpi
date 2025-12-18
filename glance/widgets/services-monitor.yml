@@ -31,3 +31,8 @@
         url: http://192.168.88.250:8094
         check-url: http://speedtest-tracker:80
         icon: si:speedtest
+      - title: Kaneo
+        url: http://192.168.88.250:9999
+        check-url: http://usekaneo-web:5173
+        icon: si:webflow
+

@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: usekaneo-postgres
+    env_file:
+      - .env
+    ports:
+      - "5433:5432"       # host:container
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - raspberry-net
+    restart: unless-stopped
+
+  api:
+    image: ghcr.io/usekaneo/api:latest
+    container_name: usekaneo-api
+    env_file:
+      - .env
+    ports:
+      - "9998:1337"       # host:container
+    networks:
+      - raspberry-net
+    restart: unless-stopped
+
+  web:
+    image: ghcr.io/usekaneo/web:latest
+    container_name: usekaneo-web
+    env_file:
+      - .env
+    ports:
+      - "9999:5173"       # host:container
+    networks:
+      - raspberry-net
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  raspberry-net:
+    external: true
+
