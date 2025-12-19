@@ -1,0 +1,12 @@
+- type: releases
+  title: Software Releases
+  repositories:
+    - portainer/portainer
+    - louislam/uptime-kuma
+    - vaultwarden/server
+    - nextcloud/server
+    - pi-hole/pi-hole
+    - containrrr/watchtower
+    - glanceapp/glance
+    - NginxProxyManager/nginx-proxy-manager
+  collapse-after: 5

@@ -1,6 +1,5 @@
 - name: Dashboard
   width: wide
-  center-vertically: true
   columns:
     - size: small
       widgets:
@@ -10,14 +9,17 @@
           hide-location: false
           units: metric
         $include: ../widgets/pi-monitor.yml
+        $include: ../widgets/clock.yml
 
     - size: full
       widgets:
         $include: ../widgets/services-monitor.yml
         $include: ../widgets/db-monitor.yml
+        $include: ../widgets/hacker-news.yml
 
     - size: small
       widgets:
         $include: ../widgets/internet-speed.yml
         $include: ../widgets/pihole.yml
         $include: ../widgets/bookmarks.yml
+        $include: ../widgets/releases.yml

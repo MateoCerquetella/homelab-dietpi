@@ -1,0 +1,5 @@
+- type: hacker-news
+  limit: 20
+  collapse-after: 10
+  sort-by: top
+  comments-url-template: https://news.ycombinator.com/item?id={POST-ID}

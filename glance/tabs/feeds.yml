@@ -3,6 +3,7 @@
     - size: small
       widgets:
         $include: ../widgets/news.yml
+        $include: ../widgets/rss-homelab.yml
     - size: full
       widgets:
         - type: search

@@ -1,0 +1,11 @@
+- type: clock
+  hour-format: 24h
+  timezones:
+    - timezone: America/Argentina/Buenos_Aires
+      label: Buenos Aires
+    - timezone: America/New_York
+      label: New York
+    - timezone: Europe/Madrid
+      label: Spain
+    - timezone: Asia/Tokyo
+      label: Tokyo

@@ -1,0 +1,14 @@
+- type: rss
+  title: Homelab News
+  style: horizontal-cards
+  feeds:
+    - url: https://www.servethehome.com/feed/
+      title: ServeTheHome
+    - url: https://blog.linuxserver.io/feed
+      title: LinuxServer.io
+    - url: https://blog.cloudflare.com/rss/
+      title: Cloudflare Blog
+    - url: https://selfh.st/feed/
+      title: selfh.st
+  limit: 15
+  collapse-after: 3

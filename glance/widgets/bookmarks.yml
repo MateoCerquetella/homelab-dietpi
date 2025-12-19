@@ -1,26 +1,35 @@
 - type: bookmarks
   groups:
-    - title: General
-      links:
-        - title: Gmail
-          url: https://mail.google.com/mail/u/0/
-        - title: Amazon
-          url: https://www.amazon.com/
-        - title: Github
-          url: https://github.com/
-    - title: Entertainment
-      links:
-        - title: YouTube
-          url: https://www.youtube.com/
-        - title: Prime Video
-          url: https://www.primevideo.com/
-        - title: Disney+
-          url: https://www.disneyplus.com/
-    - title: Social
-      links:
-        - title: Reddit
-          url: https://www.reddit.com/
-        - title: Twitter
-          url: https://twitter.com/
-        - title: Instagram
-          url: https://www.instagram.com/
+      - title: News
+        color: 45 100 60
+        links:
+            - title: Infobae
+              url: https://www.infobae.com
+              icon: si:googlenews
+            - title: Ambito
+              url: https://www.ambito.com
+              icon: si:cashapp
+            - title: Wired
+              url: https://www.wired.com
+              icon: si:hackaday
+            - title: Xataka
+              url: https://www.xataka.com
+              icon: si:tryhackme
+      - title: Tech & Resources
+        color: 200 100 60
+        links:
+            - title: Self-Hosted Apps
+              url: https://selfh.st/apps/
+              icon: si:homeassistant
+            - title: GitHub
+              url: https://github.com/
+              icon: si:github
+            - title: Indie Hackers
+              url: https://www.indiehackers.com
+              icon: si:ycombinator
+      - title: Professional
+        color: 220 83 75
+        links:
+            - title: LinkedIn
+              url: https://www.linkedin.com/feed/
+              icon: si:linkedin
